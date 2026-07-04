@@ -32,12 +32,15 @@ public:
 int main() {
 
 cout<<"enter the root element :";
-   Node *root;
+
+
+
+   Node *root=buildTree();
 
    // create a tree 
 
    
-   root =buildTree();
+   
   
    
   
