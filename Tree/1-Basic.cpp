@@ -19,7 +19,7 @@ public:
     cin>>data;
   
     if(data == -1){
-        return nullptr;
+        return nullptr;              //  A NULL pointer in C++ represents a pointer that does not refer to any valid memory address.
     }
    Node* temp = new Node(data);
    cout<<"enter the left child of "<< data<< ":";
