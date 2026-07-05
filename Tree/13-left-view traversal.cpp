@@ -1,7 +1,7 @@
 
 
 
-vector<int> leftView(Node* root){  // Tum return kar rahe ho ans, isliye function ka return type vector<int> hona chahiye.
+vector<int> leftView(Node* root){  // we returning  vector  (ans), isliye function ka return type vector<int> hona chahiye.
     
     
     
@@ -34,3 +34,32 @@ vector<int> leftView(Node* root){  // Tum return kar rahe ho ans, isliye functio
     return ans;
     
 } 
+
+
+
+
+
+
+
+
+// Another way to solve this problem  :
+
+void left_view(Node root , int level , vector<int>& ans){
+
+    if(!root){
+        return;
+    }
+
+    ans.push_back(root);
+    left_view(root->left ,level+1,ans);
+    left_view(root->right,level+1,ans);
+
+
+}
+
+int main(){
+
+  vector<int>ans;
+  left_view(root,0,ans);
+
+}
