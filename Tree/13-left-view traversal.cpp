@@ -50,7 +50,11 @@ void left_view(Node root , int level , vector<int>& ans){
         return;
     }
 
-    ans.push_back(root);
+    if(ans.size()==level){
+
+        ans.push_back(root);
+    }
+
     left_view(root->left ,level+1,ans);
     left_view(root->right,level+1,ans);
 
@@ -60,6 +64,11 @@ void left_view(Node root , int level , vector<int>& ans){
 int main(){
 
   vector<int>ans;
+
+  if(!root){
+    return ans;
+  }
+
   left_view(root,0,ans);
 
 }
