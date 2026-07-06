@@ -38,10 +38,6 @@ vector<int> leftView(Node* root){  // we returning  vector  (ans), isliye functi
 
 
 
-
-
-
-
 // Another way to solve this problem  :
 
 void left_view(Node root , int level , vector<int>& ans){
