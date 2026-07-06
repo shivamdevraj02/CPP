@@ -56,3 +56,44 @@ cout<<"enter the root element :";
 
     return 0;
 }
+
+
+/*
+  we can finding the postorder  without recursion 
+ 
+ #include <vector>
+class Solution {
+    vector<int> postorder (TreeNode * root){
+        stack<TreeNode*>s;
+        vector<int>ans ;
+           if (root == NULL) return ans; 
+        s.push(root);
+        while(!s.empty()){
+            TreeNode* temp = s.top();
+            s.pop();
+            ans.push_back(temp->val);
+             if(temp->left){
+                s.push(temp->left);
+
+            }
+            if(temp->right){
+                s.push(temp->right);
+
+            }
+
+        }
+
+        reverse(ans.begin() ,ans.end());
+
+        return ans;
+    }
+
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        return postorder(root);
+        
+    }
+};
+
+
+*/
