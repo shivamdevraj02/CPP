@@ -1,22 +1,26 @@
- class Solution {
+class Solution {
 
- TreeNode* bst(vector<int>& postorder, int& index, int lower, int upper) {
+    TreeNode* bst(vector<int>& postorder, int& index, int lower, int upper) {
 
-        if (index< 0 || lower > postorder[index] ||
-            upper < postorder[index])
+        if (index < 0 || postorder[index] < lower || postorder[index] > upper)
             return NULL;
 
         TreeNode* root = new TreeNode(postorder[index--]);
 
-        root->left = bst(postorder, index, lower, root->val);
+        // Right subtree first
         root->right = bst(postorder, index, root->val, upper);
+
+        // Left subtree
+        root->left = bst(postorder, index, lower, root->val);
+
         return root;
     }
 
 public:
-    TreeNode* bstFromPreorder(vector<int>& postorder) {
+    TreeNode* bstFromPostorder(vector<int>& postorder) {
 
-        int index = 0;
-        return bst(postorder, index,  INT_MIN, INT_MAX);
+        int index = postorder.size() - 1;
+
+        return bst(postorder, index, INT_MIN, INT_MAX);
     }
 };
