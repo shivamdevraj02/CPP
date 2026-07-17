@@ -10,7 +10,7 @@
 
 // 2) Min heap :-- parent node should be less than or equal to its child node.
 
-// for parent index -i ====  (2*1)+1  (for left) and (2*i)+2  (for the right child)
+// for parent index : i ====  (2*1)+1  (for left) and (2*i)+2  (for the right child)
 
 // for child index : i ====== parent : (i-1) /2 
 
