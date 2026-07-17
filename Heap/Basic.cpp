@@ -51,6 +51,44 @@ public:
         cout << value << " is inserted into heap\n";
     }
 
+
+    
+    // Heapify
+    void Heapify(int ind) {
+        int smallest = ind;
+        int left = 2 * ind + 1;
+        int right = 2 * ind + 2;
+
+        // 'smallest' will store the index of the elemet which is smaller between parent, left child and right child
+        if(left < size && arr[left] < arr[smallest])
+        smallest = left;
+        if(right < size && arr[right] < arr[smallest])
+        smallest = right;
+
+        if(smallest != ind) {
+            swap(arr[ind], arr[smallest]);
+            Heapify(smallest);
+        }
+    } 
+
+    // Delete Operation
+    void Delete() {
+        if(size == 0) {
+            cout << "Heap Underflow" << endl;
+            return;
+        }
+
+        cout << arr[0] << " deleted from the Heap" << endl;
+        arr[0] = arr[size - 1]; // Replacing heap root with last node
+        size--;
+
+        if(size == 0)
+        return;
+
+        // Function to keep the heap positions correct
+        Heapify(0);
+    }
+
     void print() {
 
         for (int i = 0; i < size; i++) {
@@ -70,6 +108,9 @@ int main() {
     H1.insert(12);
 
     H1.print();
+    H1.Delete();
+    H1.print();
+
 
     return 0;
 }
