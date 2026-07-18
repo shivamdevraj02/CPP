@@ -3,7 +3,9 @@
 using namespace std;
 int main(){
 
-    priority_queue<int>p;  // max heap
+    priority_queue<int>p; // for max heap
+    
+    // priority_queue<int , vector<int> ,greater<int>> p;    // for min heap
 
     p.push(12);
     p.push(121);
