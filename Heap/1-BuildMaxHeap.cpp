@@ -8,7 +8,7 @@ using namespace std;
          int right = 2*index+2;
 
 
-         if(left<n && arr[left]>arr[largest])
+         if(left<n && arr[left]>arr[largest])   // left < n aur right < n array ke out-of-bounds access ko rokne ke liye likhte hain.
          largest =left;
          if(right<n && arr[right]>arr[largest])
          largest =right;
@@ -16,14 +16,16 @@ using namespace std;
 
          if(largest!=index)
          {
-            swap(arr[largest],arr[index]);
+            swap(arr[largest],arr[index]);  // matlab parent pehle se hi sabse bada hai, to heap property already satisfy ho rahi hai.  matlab koi child parent se bada hai, to Max Heap violate ho gaya.
+
+
             Heapify(arr,largest,n);
          }
     }
 
     void BuildMaxHeap(int arr[],int n)
     {
-        for(int i=n/2-1;i>=0;i--)
+        for(int i=n/2-1;i>=0;i--)   //   here we are starting with i =n/2-1 becouse  it gives the starting node which have child node ..
         {
             Heapify(arr ,i , n);
         }
