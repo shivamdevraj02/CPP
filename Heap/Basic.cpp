@@ -1,4 +1,4 @@
-// Heap is complete binnary tree 
+// Heap is complete binnary tree .
 
 // All levels are completely filled except the last level.
 
