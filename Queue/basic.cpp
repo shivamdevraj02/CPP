@@ -84,6 +84,7 @@ int main () {
 
 
     // check empty()
+    // checking all the conditions
 
     if (q.empty())
     {
