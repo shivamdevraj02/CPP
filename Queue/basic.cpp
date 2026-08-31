@@ -10,7 +10,7 @@ Queue is defined as the std::queue class template inside <queue> header file.
 
 queue<T> q;
 
-where,
+where, we define all the meaning of the term
 
 
 T: DataType of elements in the queue.
