@@ -9,7 +9,7 @@ int Search(int array[][3], int key, int n, int m)
         {
             if (key == array[i][j])
             {
-                return 1;
+                return 1; // for termination 
             }
         }
     }
