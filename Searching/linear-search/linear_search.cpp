@@ -20,6 +20,7 @@ int main()
     cout << "enter the size of array:" << endl;
     cin >> n;
     // int m;
+    //int p;
     cout << "enter the array :" << endl;
     int array[n];
     for (int i = 0; i < n; i++)
