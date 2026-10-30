@@ -28,6 +28,7 @@ int main()
     }
 
     // cin>>m;
+    //imt v;
     int p;
     cout << "enter the element for the search :";
     cin >> p;
