@@ -52,6 +52,7 @@ void inorder(Node* root){
 }
 
 // inorder travesal in the binnary search tree always gives a sorted array ;
+// inorder traversa;
 int main(){
    
     int arr[] ={6,3,17,2,13,27,54,32,12,9};
