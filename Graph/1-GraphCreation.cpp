@@ -31,6 +31,7 @@ int main (){
    {
       cin>>u>>v>>weight;
       ADJ[u][v]=weight;
+      //int m;
       ADJ[v][u]=weight;
  
    }
