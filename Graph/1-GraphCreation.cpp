@@ -48,6 +48,7 @@ int main (){
 
 
        cout<<endl;
+     // cout"streak"
        
     }
     
