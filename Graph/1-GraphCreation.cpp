@@ -19,6 +19,7 @@ int main (){
        cin>>u>>v;
        ADJ[u][v]=1;
        ADJ[v][u]=1;
+     //int n;
 
     }
 
