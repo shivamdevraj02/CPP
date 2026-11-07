@@ -9,6 +9,7 @@ int main (){
     int edge,vertex;
     cout<<"enter vertex and edge: ";
     cin>>vertex>>edge;
+ //int m;
 
 
     vector<vector<bool>>ADJ(vertex,vector<bool>(vertex,0));  // and in wighted graph here is booldata type replace with int 
