@@ -1,1 +1,2 @@
 // maths.file
+..int n
