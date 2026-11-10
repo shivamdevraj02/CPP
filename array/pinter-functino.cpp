@@ -71,7 +71,7 @@
 //     cout << sizeof(arr);   // 8 (pointer size)
 // }
 
-
+// int m;
 // main code
 #include <iostream>
 using namespace std;
