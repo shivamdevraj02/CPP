@@ -13,6 +13,8 @@ public:
      }
  };
 
+//int m;
+
  Node * buildTree(){
    
     int data;
