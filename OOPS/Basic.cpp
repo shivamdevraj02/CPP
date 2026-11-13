@@ -14,7 +14,7 @@ A class is a user-defined blueprint or prototype from which objects are created.
 * Class Name: The class name should follow naming conventions, usually starting with a capital letter.
 * Body: The class body is enclosed with braces {} and defines data members and member functions.
 
-2. Object:--
+2. Object in cpp :--
 
 An Object is a basic unit of Object-Oriented Programming that represents real-life entities. A typical C++ program creates many objects, which interact with each other by invoking methods. The objects are what perform your code, they are the part of your code visible to the user. An object mainly consists of:
 
