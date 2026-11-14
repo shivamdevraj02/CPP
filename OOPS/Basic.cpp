@@ -47,7 +47,7 @@ An Object is a basic unit of Object-Oriented Programming that represents real-li
 
 
 //note:=== (agr hero class ek alg tab me rakhni ho )
-
+// in cpp 
 
 #include <iostream>
 #include "Hero.cpp"
