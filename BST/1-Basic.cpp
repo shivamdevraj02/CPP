@@ -33,7 +33,7 @@ Node *insert_node(Node* root ,int target){
     }
     return root;
 }
-
+// text
 void inorder(Node* root){
 
     if(!root)
