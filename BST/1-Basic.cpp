@@ -13,7 +13,8 @@ class Node {
     }
 
 };
-// comments 
+// comments
+// int m;
 Node *insert_node(Node* root ,int target){
 
     if(!root){
