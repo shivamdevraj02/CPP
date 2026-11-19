@@ -10,6 +10,7 @@ if we not give the base case then programme will executed until the stack memory
 TAIL RECURSION AND HEAD RECURSION:-- 
 
 int m;
+int n;
 
 1)  func(){
     
