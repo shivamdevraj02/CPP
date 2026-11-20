@@ -1,3 +1,6 @@
+// starting strat journey
+
+
 #include<iostream>
 using namespace std ;
 class Node {
