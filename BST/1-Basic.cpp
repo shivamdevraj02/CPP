@@ -1,4 +1,5 @@
 // starting strat journey
+// dat 1
 
 
 #include<iostream>
