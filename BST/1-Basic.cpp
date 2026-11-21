@@ -1,5 +1,5 @@
 // starting strat journey
-// dat 1
+// day 1
 
 
 #include<iostream>
