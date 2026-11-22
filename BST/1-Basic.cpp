@@ -1,7 +1,7 @@
 // starting strat journey
 // day 1
 // day 2
-// day 
+// day 3
 
 
 #include<iostream>
