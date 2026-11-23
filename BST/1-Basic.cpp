@@ -22,7 +22,7 @@ class Node {
 };
 // comments
 // int m;
-// int p;
+
 Node *insert_node(Node* root ,int target){
 
     if(!root){
