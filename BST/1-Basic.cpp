@@ -21,7 +21,7 @@ class Node {
 
 };
 // comments
-// int m;
+
 
 Node *insert_node(Node* root ,int target){
 
