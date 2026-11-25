@@ -1,5 +1,6 @@
 // starting strat journey
 // day 1
+// day 2
 
 
 
